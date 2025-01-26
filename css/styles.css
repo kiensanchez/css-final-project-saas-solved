@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: sans-serif;
+}
+
+body {
+  background-image: url("../assets/bg/background-top.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  padding: 10px;
+  background-color: #f3f3f3;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.logo a img {
+  height: 50px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-btn ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+#nav-btn {
+  text-decoration: none;
+  color: gray;
+}
+
+#nav-btn:hover {
+  color: #00bfff;
+}
+
+#buy-btn {
+  background-color: #0000ff;
+  color: #ffffff;
+  border: none;
+  padding: 20px 30px;
+  border-radius: 40px;
+}
+
+#buy-btn:hover {
+  color: #0000ff;
+  background-color: #ffffff;
+  cursor: pointer;
+}
