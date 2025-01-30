@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -6,8 +8,8 @@
 
 html,
 body {
-  height: 100%;
-  font-family: sans-serif;
+  height: 100vh;
+  font-family: "Inter", sans-serif;
 }
 
 body {
@@ -26,6 +28,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 10;
 }
 
 .logo a img {
@@ -53,23 +56,139 @@ body {
 
 #nav-btn {
   text-decoration: none;
-  color: gray;
+  color: #808080;
 }
 
 #nav-btn:hover {
   color: #00bfff;
 }
 
-#buy-btn {
-  background-color: #0000ff;
+#buy-btn,
+#play-btn {
+  background-color: #1e90ff;
   color: #ffffff;
   border: none;
   padding: 20px 30px;
   border-radius: 40px;
 }
 
-#buy-btn:hover {
-  color: #0000ff;
+#buy-btn:hover,
+#play-btn:hover {
+  color: #1e90ff;
   background-color: #ffffff;
   cursor: pointer;
+}
+
+.logo-container {
+  width: 100%;
+  margin-top: 100px;
+  height: 620px;
+  display: flex;
+  border: solid 1px blue;
+}
+
+.logo-info {
+  height: 100%;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding-left: 30px;
+}
+
+.logo-info h1 {
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.logo-info p {
+  font-weight: 200;
+}
+
+.play-container {
+  margin-top: 20px;
+}
+
+#play-btn {
+  margin-right: 20px;
+}
+
+#learn {
+  text-decoration: none;
+  color: #00bfff;
+}
+
+#learn:hover {
+  color: #808080;
+}
+
+.logos {
+  border: solid 1px red;
+  height: 100%;
+  width: 65%;
+}
+
+.sml-logo {
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  background-size: 40px 40px;
+}
+
+.sml-logo,
+.lg-logo {
+  display: block;
+  border-radius: 50%;
+  box-shadow: 0 0 5px #808080;
+  background-color: #ffffff;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.lg-logo {
+  height: 75px;
+  width: 75px;
+  background-size: 50px 50px;
+}
+
+#logo1 {
+  background-image: url("../assets/logos/google.png");
+  top: 200px;
+  right: 400px;
+}
+
+#logo2 {
+  background-image: url("../assets/logos/atlassian.png");
+  top: 200px;
+  right: 250px;
+}
+
+#logo3 {
+  background-image: url("../assets/logos/asana.png");
+  top: 200px;
+  right: 60px;
+}
+
+#logo4 {
+  background-image: url("../assets/logos/paypal.jpg");
+  top: 450px;
+  right: 400px;
+}
+
+#logo5 {
+  background-image: url("../assets/logos/weave.png");
+  top: 450px;
+  right: 150px;
+}
+#logo6 {
+  background-image: url("../assets/logos/google-ads.png");
+  top: 600px;
+  right: 300px;
+}
+#logo7 {
+  background-image: url("../assets/logos/calendar.png");
+  top: 630px;
+  right: 75px;
 }
