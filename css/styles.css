@@ -79,12 +79,19 @@ body {
   cursor: pointer;
 }
 
+#buy-btn,
+#play-btn,
+#nav-btn {
+  transition-delay: 0.25s;
+  transition-timing-function: ease;
+  transition-duration: 0.5s;
+}
+
 .logo-container {
   width: 100%;
   margin-top: 100px;
   height: 620px;
   display: flex;
-  border: solid 1px blue;
 }
 
 .logo-info {
@@ -102,8 +109,9 @@ body {
   font-weight: 400;
 }
 
-.logo-info p {
-  font-weight: 200;
+.logo-info p,
+.why-container p {
+  font-weight: 100;
 }
 
 .play-container {
@@ -124,7 +132,6 @@ body {
 }
 
 .logos {
-  border: solid 1px red;
   height: 100%;
   width: 65%;
 }
@@ -134,6 +141,7 @@ body {
   width: 55px;
   border-radius: 50%;
   background-size: 40px 40px;
+  animation-name: shrink;
 }
 
 .sml-logo,
@@ -145,12 +153,14 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   position: absolute;
+  animation-duration: 4s;
 }
 
 .lg-logo {
   height: 75px;
   width: 75px;
   background-size: 50px 50px;
+  animation-name: rotate;
 }
 
 #logo1 {
@@ -191,4 +201,123 @@ body {
   background-image: url("../assets/logos/calendar.png");
   top: 630px;
   right: 75px;
+}
+
+@keyframes shrink {
+  from {
+    transform: scale(2);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(320deg);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
+
+.why-container {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.tag {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.diagram-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-container {
+  width: 95%;
+  height: 100%;
+  display: flex;
+}
+
+.box {
+  width: 25%;
+  max-width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.line {
+  height: 40px;
+  width: 100%;
+  position: relative;
+}
+
+.line::before,
+.line::after {
+  content: "";
+  position: absolute;
+  margin: auto;
+  height: 1px;
+  background: #999898;
+  width: 38%;
+  top: 45%;
+}
+
+.line::after {
+  left: 0;
+}
+
+.line::before {
+  right: 0;
+}
+
+.circle {
+  background: #cadceb;
+  height: 40px;
+  width: 40px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle span {
+  height: 5px;
+  width: 5px;
+  background: #00bfff;
+  display: block;
+}
+
+.circle,
+.circle span {
+  border-radius: 50%;
+}
+
+#basic::after,
+#page::before {
+  display: none;
+}
+
+.box h3 {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.pricing {
+  height: 1000px;
 }
