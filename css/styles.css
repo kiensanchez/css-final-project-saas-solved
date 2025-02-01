@@ -54,13 +54,16 @@ body {
   gap: 20px;
 }
 
-#nav-btn {
+#nav-btn,
+ul li {
   text-decoration: none;
   color: #808080;
 }
 
-#nav-btn:hover {
+#nav-btn:hover,
+ul li:hover {
   color: #00bfff;
+  cursor: pointer;
 }
 
 #buy-btn,
@@ -81,8 +84,9 @@ body {
 
 #buy-btn,
 #play-btn,
-#nav-btn {
-  transition-delay: 0.25s;
+#nav-btn,
+ul li,
+.call {
   transition-timing-function: ease;
   transition-duration: 0.5s;
 }
@@ -124,8 +128,8 @@ p {
   margin-top: 20px;
 }
 
-#play-btn {
-  margin-right: 20px;
+.play-container a {
+  margin-left: 20px;
 }
 
 #learn {
@@ -330,6 +334,7 @@ p {
   margin: 0 auto;
   max-width: 1000px;
   padding: 0 10px;
+  margin-bottom: 20px;
 }
 
 .price-tag {
@@ -438,4 +443,171 @@ p {
 
 .component p {
   font-size: 14px;
+}
+
+.form-wrap {
+  height: 700px;
+  width: 100%;
+  background-color: #091041;
+}
+
+.hire-container {
+  max-width: 1000px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  padding: 30px;
+  gap: 30px;
+}
+
+.hire-sec {
+  width: 40%;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+.hire-sec h2 {
+  font-size: 30px;
+}
+
+.hire-sec h2,
+.quote,
+.profile h3 {
+  color: #ffffff;
+}
+
+.profile h3 {
+  margin: 20px 0 10px 0;
+}
+
+.dp {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-image: url("../assets/images/man_one.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-top: 20px;
+}
+
+.form-container {
+  width: 60%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px 40px;
+}
+
+form h4 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.info,
+.email {
+  height: 40px;
+  border: 1px solid #d4d2d2;
+  border-radius: 5px;
+  padding-left: 5px;
+  margin-bottom: 20px;
+}
+
+.info {
+  width: 49%;
+}
+
+.email {
+  width: 99%;
+}
+
+select {
+  height: 40px;
+  width: 49%;
+  border: 1px solid #d4d2d2;
+  margin-bottom: 20px;
+}
+
+textarea {
+  border: 1px solid #d4d2d2;
+  width: 99%;
+  margin-bottom: 20px;
+}
+
+.policy {
+  margin-right: 5px;
+}
+
+.policy-text {
+  font-weight: 200;
+}
+
+form a {
+  text-decoration-style: dashed;
+  transition: 1s ease;
+}
+
+form a:hover {
+  color: #808080;
+}
+
+form button {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.footer {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 60px;
+}
+
+.foot-logo {
+  height: 60px;
+  width: 120px;
+  background-image: url("../assets/logos/logo-front.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.call {
+  color: #00bfff;
+  font-weight: 400;
+}
+
+.call:hover {
+  cursor: pointer;
+  color: #808080;
+}
+
+.foot-sec {
+  margin-top: 30px;
+}
+
+.foot-sec p i {
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.foot-sec h4 {
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+ul li {
+  list-style: none;
+  margin: 15px auto;
+}
+
+li span {
+  background: #1e90ff;
+  color: #ffffff;
+  padding: 2px;
+  font-size: 10px;
+  border-radius: 5px;
 }
