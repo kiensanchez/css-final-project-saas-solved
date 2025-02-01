@@ -109,10 +109,16 @@ body {
   font-weight: 400;
 }
 
-.logo-info p,
-.why-container p {
-  font-weight: 100;
+p {
+  font-weight: 200;
+  color: #7e7a7a;
 }
+
+/* .logo-info p,
+.why-container p,
+.tag p {
+  font-weight: 100;
+} */
 
 .play-container {
   margin-top: 20px;
@@ -222,10 +228,11 @@ body {
 }
 
 .why-container {
-  height: 500px;
+  height: 250px;
   width: 100%;
   display: flex;
   flex-direction: column;
+  padding: 0 20px;
 }
 
 .tag {
@@ -234,7 +241,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
 
 .diagram-container {
@@ -319,5 +326,116 @@ body {
 }
 
 .pricing {
-  height: 1000px;
+  height: 600px;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 0 10px;
+}
+
+.price-tag {
+  height: 25%;
+}
+
+.sec4 {
+  display: flex;
+  /* border: 1px solid red; */
+}
+
+.price {
+  height: 75%;
+  width: 40%;
+  border: 1px solid #f5f5f5;
+  border-radius: 2px;
+  transition: 1s ease 0.25s;
+}
+
+.price-detail {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 30px 30px;
+  gap: 20px;
+  padding-bottom: 60px;
+}
+
+.price:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px;
+}
+
+.price-detail h3 {
+  flex: 1;
+}
+
+.price-detail p,
+.play-vid {
+  flex: 2;
+}
+
+.price-detail h3 {
+  font-size: 50px;
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+  font-weight: 400;
+  padding-top: 45px;
+}
+
+.price-detail span {
+  font-weight: 400;
+  color: #999898;
+  font-size: 20px;
+}
+
+.price-detail p {
+  font-size: 20px;
+}
+
+#credit {
+  font-size: 12px;
+}
+
+.play-vid button {
+  margin-bottom: 10px;
+}
+
+.components-wrap {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.component {
+  height: 50%;
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.img {
+  height: 50px;
+  width: 50px;
+  background: center no-repeat;
+}
+
+#component {
+  background-image: url("../assets/images/components.svg");
+}
+
+#images {
+  background-image: url("../assets/images/images.svg");
+}
+
+#cancel {
+  background-image: url("../assets/images/cancel.svg");
+}
+
+#money {
+  background-image: url("../assets/images/moneyback.svg");
+}
+
+.component p {
+  font-size: 14px;
 }
