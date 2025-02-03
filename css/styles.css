@@ -31,6 +31,12 @@ body {
   z-index: 10;
 }
 
+.menu {
+  font-size: 30px;
+  color: #808080;
+  display: none;
+}
+
 .logo a img {
   height: 50px;
 }
@@ -93,9 +99,9 @@ ul li,
 
 .logo-container {
   width: 100%;
-  margin-top: 100px;
   height: 620px;
   display: flex;
+  padding: 50px;
 }
 
 .logo-info {
@@ -144,6 +150,7 @@ p {
 .logos {
   height: 100%;
   width: 65%;
+  position: relative;
 }
 
 .sml-logo {
@@ -175,41 +182,41 @@ p {
 
 #logo1 {
   background-image: url("../assets/logos/google.png");
-  top: 200px;
+  top: 100px;
   right: 400px;
 }
 
 #logo2 {
   background-image: url("../assets/logos/atlassian.png");
-  top: 200px;
+  top: 100px;
   right: 250px;
 }
 
 #logo3 {
   background-image: url("../assets/logos/asana.png");
-  top: 200px;
+  top: 100px;
   right: 60px;
 }
 
 #logo4 {
   background-image: url("../assets/logos/paypal.jpg");
-  top: 450px;
+  top: 300px;
   right: 400px;
 }
 
 #logo5 {
   background-image: url("../assets/logos/weave.png");
-  top: 450px;
+  top: 300px;
   right: 150px;
 }
 #logo6 {
   background-image: url("../assets/logos/google-ads.png");
-  top: 600px;
+  top: 450px;
   right: 300px;
 }
 #logo7 {
   background-image: url("../assets/logos/calendar.png");
-  top: 630px;
+  top: 480px;
   right: 75px;
 }
 
@@ -315,7 +322,9 @@ p {
 }
 
 .circle,
-.circle span {
+.circle span,
+.cir,
+.cir span {
   border-radius: 50%;
 }
 
@@ -469,11 +478,17 @@ p {
   gap: 30px;
 }
 
-.hire-sec h2 {
+.hire {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.hire h2 {
   font-size: 30px;
 }
 
-.hire-sec h2,
+.hire h2,
 .quote,
 .profile h3 {
   color: #ffffff;
@@ -546,6 +561,7 @@ textarea {
 form a {
   text-decoration-style: dashed;
   transition: 1s ease;
+  color: #00bfff;
 }
 
 form a:hover {
@@ -610,4 +626,302 @@ li span {
   padding: 2px;
   font-size: 10px;
   border-radius: 5px;
+}
+
+@media (max-width: 1023px) {
+  .nav-btn ul,
+  #buy-btn {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+    margin-right: 10px;
+  }
+
+  .sml-logo,
+  .lg-logo {
+    animation-name: none;
+  }
+
+  #play-btn:hover,
+  #buy-btn:hover {
+    color: #ffffff;
+    background-color: #1e90ff;
+  }
+
+  #nav-btn:hover,
+  ul li:hover {
+    color: #808080;
+  }
+
+  #learn:hover,
+  form a:hover,
+  .call:hover {
+    color: #00bfff;
+  }
+
+  .logo-container {
+    flex-direction: column;
+    height: 900px;
+  }
+
+  .logo-info {
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logos {
+    width: 100%;
+  }
+
+  h1 br {
+    display: none;
+  }
+
+  #logo1 {
+    top: 0;
+    left: 100px;
+  }
+
+  #logo2 {
+    top: 0;
+    left: 400px;
+  }
+
+  #logo3 {
+    top: 0;
+  }
+
+  #logo4 {
+    top: 150px;
+    left: 150px;
+  }
+
+  #logo5 {
+    top: 150px;
+    right: 250px;
+  }
+
+  #logo6 {
+    top: 300px;
+    left: 290px;
+  }
+
+  #logo7 {
+    top: 290px;
+  }
+
+  .pricing {
+    height: 1000px;
+  }
+
+  .sec4 {
+    flex-direction: column;
+  }
+
+  .price,
+  .components-wrap {
+    width: 100%;
+  }
+
+  .price {
+    box-shadow: 0 0 10px 1px #b0aeae;
+  }
+
+  .price:hover {
+    box-shadow: 0 0 10px 1px #b0aeae;
+  }
+
+  .price-detail {
+    align-items: center;
+  }
+
+  .price-detail hr {
+    align-self: normal;
+  }
+
+  .form-wrap {
+    height: 820px;
+  }
+
+  .hire-container {
+    flex-direction: column;
+  }
+
+  .hire-sec,
+  .form-container {
+    width: 100%;
+  }
+
+  .hire-sec {
+    flex-direction: row;
+  }
+
+  .hire {
+    gap: 15px;
+  }
+
+  .footer {
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  #foot-logo {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  .footer div:nth-child(2) {
+    grid-column-start: 4;
+    grid-column-end: 6;
+  }
+
+  .footer div:nth-child(4) {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .footer div:nth-child(5) {
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+}
+
+@media (max-width: 767px) {
+  #logo1 {
+    left: 0;
+    top: 100px;
+  }
+
+  #logo2 {
+    left: 120px;
+  }
+
+  #logo3 {
+    right: 0;
+  }
+
+  #logo4 {
+    left: 100px;
+    top: 200px;
+  }
+
+  #logo5 {
+    right: 100px;
+    top: 120px;
+  }
+
+  #logo6 {
+    left: 0;
+  }
+
+  #logo7 {
+    right: 0;
+  }
+
+  .line::before,
+  .line::after {
+    display: none;
+  }
+
+  .line {
+    width: 0;
+    position: static;
+  }
+
+  .why-container {
+    height: 750px;
+  }
+
+  .diagram-container,
+  .box {
+    flex: 1;
+  }
+
+  .center-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    max-width: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .line {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .pricing {
+    height: 1600px;
+  }
+
+  .components-wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-wrap {
+    height: 1230px;
+  }
+
+  .hire-sec,
+  .profile {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hire {
+    align-items: center;
+  }
+
+  .hire hr {
+    align-self: normal;
+  }
+
+  .profile {
+    display: flex;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info,
+  select {
+    width: 99%;
+  }
+
+  form a,
+  form button {
+    margin: auto;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #foot-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
 }
