@@ -797,13 +797,17 @@ li span {
 }
 
 @media (max-width: 767px) {
+  .logo-container {
+    margin-top: 30px;
+  }
+
   #logo1 {
     left: 0;
     top: 100px;
   }
 
   #logo2 {
-    left: 120px;
+    left: 80px;
   }
 
   #logo3 {
@@ -826,6 +830,10 @@ li span {
 
   #logo7 {
     right: 0;
+  }
+
+  .why-container {
+    height: 720px;
   }
 
   .line::before,
@@ -867,7 +875,11 @@ li span {
   }
 
   .pricing {
-    height: 1600px;
+    height: 1500px;
+  }
+
+  .price-tag {
+    height: 15%;
   }
 
   .components-wrap {
@@ -875,14 +887,22 @@ li span {
     align-items: center;
   }
 
+  .component {
+    width: 100%;
+  }
+
   .form-wrap {
-    height: 1230px;
+    height: 1350px;
   }
 
   .hire-sec,
   .profile {
     flex-direction: column;
     align-items: center;
+  }
+
+  .hire-container {
+    margin: 20px auto;
   }
 
   .hire {
